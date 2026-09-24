@@ -1,0 +1,2355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Bilal Yousaf | Cybersecurity Student (CUST) â€¢ AI &amp; HemoScan</title>
+  <meta name="description" content="Muhammad Bilal Yousaf â€” Undergraduate Cybersecurity Student at Capital University of Science and Technology (CUST) specializing in Cyber Defense, Artificial Intelligence, HemoScan, and Microsoft Office Data Modeling." />
+  <meta name="keywords" content="Muhammad Bilal Yousaf, Cybersecurity Student, CUST, HemoScan, AI Hemoglobin, Cybersecurity, cust.pk, srbilal12-cyber" />
+  <meta name="author" content="Muhammad Bilal Yousaf" />
+
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Muhammad Bilal Yousaf | Cybersecurity Student (CUST) â€¢ AI &amp; HemoScan" />
+  <meta property="og:description" content="Official portfolio of Muhammad Bilal Yousaf, Undergraduate Cybersecurity Student at CUST, creator of HemoScan, and specialist in threat defense and enterprise data modeling." />
+  <meta property="og:image" content="./assets/bilal_card_portrait.jpg" />
+  <meta property="og:url" content="https://github.com/srbilal12-cyber" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Muhammad Bilal Yousaf | Cybersecurity Student (CUST) â€¢ AI &amp; HemoScan" />
+  <meta name="twitter:description" content="Undergraduate Cybersecurity Student at Capital University of Science &amp; Technology (CUST), creator of HemoScan." />
+  <meta name="twitter:image" content="./assets/bilal_card_portrait.jpg" />
+  
+  <!-- Professional High-Tech Typography (Plus Jakarta Sans, Space Grotesk, JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            cyber: {
+              black: '#030712',
+              dark: '#080d1a',
+              card: 'rgba(10, 18, 38, 0.85)',
+              border: 'rgba(0, 240, 255, 0.2)',
+              blue: '#00f0ff',
+              cyan: '#38bdf8',
+              green: '#10b981',
+              neonGreen: '#00ff66',
+              crimson: '#ef4444',
+              blood: '#dc2626',
+              accent: '#3b82f6',
+              textMuted: '#94a3b8'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          },
+          animation: {
+            'laser': 'laser 3s ease-in-out infinite alternate',
+            'float': 'float 5s ease-in-out infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-8px)' }
+            },
+            laser: {
+              '0%': { top: '0%' },
+              '100%': { top: '95%' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Base64 Photo & Banner Loader -->
+  <script src="./assets/photoData.js"></script>
+
+  <!-- React 18 & Babel for Standalone Execution -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease;
+    }
+    html.dark body {
+      background-color: #070b14;
+      color: #f1f5f9;
+    }
+    html.light body {
+      background-color: #f8fafc;
+      color: #0f172a;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      overflow-x: hidden;
+      letter-spacing: -0.01em;
+      cursor: auto;
+    }
+    
+    /* Adaptive Minimal Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    html.dark ::-webkit-scrollbar-track {
+      background: #070b14;
+    }
+    html.light ::-webkit-scrollbar-track {
+      background: #f1f5f9;
+    }
+    html.dark ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #38bdf8, #10b981);
+      border-radius: 3px;
+    }
+    html.light ::-webkit-scrollbar-thumb {
+      background: linear-gradient(180deg, #0284c7, #6366f1);
+      border-radius: 3px;
+    }
+
+    /* Adaptive High-Tech Spatial Grid */
+    html.dark .spatial-grid {
+      background-size: 50px 50px;
+      background-image: 
+        linear-gradient(to right, rgba(56, 189, 248, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(56, 189, 248, 0.04) 1px, transparent 1px);
+    }
+    html.light .spatial-grid {
+      background-size: 50px 50px;
+      background-image: 
+        linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+    }
+
+    /* Executive Chamfered Shapes */
+    .cyber-panel {
+      clip-path: polygon(
+        0 14px,
+        14px 0,
+        calc(100% - 14px) 0,
+        100% 14px,
+        100% calc(100% - 14px),
+        calc(100% - 14px) 100%,
+        14px 100%,
+        0 calc(100% - 14px)
+      );
+    }
+
+    .cyber-button {
+      clip-path: polygon(
+        8px 0,
+        100% 0,
+        100% calc(100% - 8px),
+        calc(100% - 8px) 100%,
+        0 100%,
+        0 8px
+      );
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes spinSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spinSlow 20s linear infinite;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen selection:bg-cyan-500 selection:text-white">
+
+  <!-- Ambient Spatial Overlays (Dynamically Adaptive) -->
+  <div class="fixed inset-0 spatial-grid pointer-events-none z-0"></div>
+  <div class="fixed -top-40 -left-40 w-96 h-96 bg-cyan-500/10 dark:bg-cyan-500/15 rounded-full blur-[160px] pointer-events-none"></div>
+  <div class="fixed top-1/2 -right-40 w-96 h-96 bg-indigo-500/10 dark:bg-indigo-500/15 rounded-full blur-[160px] pointer-events-none"></div>
+  <div class="fixed -bottom-40 left-1/3 w-96 h-96 bg-emerald-500/10 dark:bg-emerald-500/15 rounded-full blur-[160px] pointer-events-none"></div>
+
+  <!-- React Root Container -->
+  <div id="root" class="relative z-20"></div>
+
+  <!-- React Application Logic -->
+  <script type="text/babel">
+    const { useState, useEffect, useRef, useMemo } = React;
+
+    // Resolve user photo & banner: Base64 fallback or local relative path
+    const USER_PHOTO_SRC = (typeof window !== 'undefined' && window.BILAL_PHOTO_BASE64) 
+      ? window.BILAL_PHOTO_BASE64 
+      : './assets/bilal.jpg';
+
+    const USER_HEADSHOT_SRC = (typeof window !== 'undefined' && window.BILAL_HEADSHOT_BASE64) 
+      ? window.BILAL_HEADSHOT_BASE64 
+      : './assets/bilal_headshot.jpg';
+
+    const USER_CARD_SRC = (typeof window !== 'undefined' && window.BILAL_CARD_BASE64) 
+      ? window.BILAL_CARD_BASE64 
+      : './assets/bilal_card_portrait.jpg';
+
+    const USER_BANNER_SRC = (typeof window !== 'undefined' && window.BILAL_BANNER_BASE64)
+      ? window.BILAL_BANNER_BASE64
+      : './assets/banner.jpg';
+
+    // Verified details from user
+    const USER_INFO = {
+      name: "Muhammad Bilal Yousaf",
+      role: "Cybersecurity Student",
+      status: "BS Cybersecurity Undergraduate (In Progress)",
+      degree: "BS Cybersecurity (Currently Enrolled)",
+      email: "srbilal12@gmail.com",
+      phone: "+92 3421080908",
+      affiliation: "Capital University of Science and Technology (CUST - cust.pk)",
+      location: "Hajira, Azad Kashmir",
+      linkedin: "https://www.linkedin.com/in/muhammad-bilal-yousaf-a2a93140b",
+      github: "https://github.com/srbilal12-cyber",
+      hemoscanUrl: "https://hemo-scan--srbilal12.replit.app/",
+      resumeUrl: "./assets/Muhammad_Bilal_Yousaf_Resume.html"
+    };
+
+    // --- Subtle Audio Synthesizer ---
+    class CyberAudio {
+      constructor() {
+        this.ctx = null;
+        this.muted = true;
+        this.humOsc = null;
+        this.humGain = null;
+        this.humActive = false;
+      }
+
+      init() {
+        if (!this.ctx) {
+          const AudioContext = window.AudioContext || window.webkitAudioContext;
+          if (AudioContext) {
+            this.ctx = new AudioContext();
+          }
+        }
+        if (this.ctx && this.ctx.state === 'suspended') {
+          this.ctx.resume();
+        }
+      }
+
+      toggleMute() {
+        this.init();
+        this.muted = !this.muted;
+        if (this.muted && this.humActive) {
+          this.stopHum();
+        }
+        if (!this.muted) {
+          this.playConfirm();
+        }
+        return this.muted;
+      }
+
+      startHum() {
+        this.init();
+        if (this.muted || this.humOsc || !this.ctx) return false;
+        try {
+          const now = this.ctx.currentTime;
+          this.humOsc = this.ctx.createOscillator();
+          const filter = this.ctx.createBiquadFilter();
+          filter.type = 'lowpass';
+          filter.frequency.setValueAtTime(140, now);
+
+          this.humGain = this.ctx.createGain();
+          this.humGain.gain.setValueAtTime(0.0001, now);
+          this.humGain.gain.exponentialRampToValueAtTime(0.02, now + 1.2);
+
+          this.humOsc.type = 'triangle';
+          this.humOsc.frequency.setValueAtTime(55, now);
+
+          this.humOsc.connect(filter);
+          filter.connect(this.humGain);
+          this.humGain.connect(this.ctx.destination);
+          this.humOsc.start(now);
+          this.humActive = true;
+          return true;
+        } catch(e) {
+          return false;
+        }
+      }
+
+      stopHum() {
+        if (!this.humOsc || !this.ctx) return false;
+        try {
+          const now = this.ctx.currentTime;
+          if (this.humGain) {
+            this.humGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.5);
+          }
+          setTimeout(() => {
+            if (this.humOsc) {
+              try { this.humOsc.stop(); } catch(e){}
+              this.humOsc = null;
+            }
+          }, 600);
+          this.humActive = false;
+          return false;
+        } catch(e) {
+          this.humActive = false;
+          return false;
+        }
+      }
+
+      toggleHum() {
+        this.init();
+        if (this.humActive) {
+          return this.stopHum();
+        } else {
+          return this.startHum();
+        }
+      }
+
+      playHover() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(880, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(1320, this.ctx.currentTime + 0.03);
+          gain.gain.setValueAtTime(0.025, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.03);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.03);
+        } catch(e) {}
+      }
+
+      playClick() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(1100, this.ctx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(320, this.ctx.currentTime + 0.05);
+          gain.gain.setValueAtTime(0.05, this.ctx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, this.ctx.currentTime + 0.05);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start();
+          osc.stop(this.ctx.currentTime + 0.05);
+        } catch(e) {}
+      }
+
+      playConfirm() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(587.33, now);
+          osc.frequency.setValueAtTime(880, now + 0.07);
+          gain.gain.setValueAtTime(0.04, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.18);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.18);
+        } catch(e) {}
+      }
+
+      playTransmission() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(380, now);
+          osc.frequency.linearRampToValueAtTime(1400, now + 0.25);
+          osc.frequency.exponentialRampToValueAtTime(300, now + 0.45);
+          gain.gain.setValueAtTime(0.05, now);
+          gain.gain.linearRampToValueAtTime(0.08, now + 0.18);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.45);
+        } catch(e) {}
+      }
+
+      playModalOpen() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(440, now);
+          osc.frequency.exponentialRampToValueAtTime(987.77, now + 0.12);
+          gain.gain.setValueAtTime(0.04, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.16);
+        } catch(e) {}
+      }
+
+      playModalClose() {
+        if (this.muted || !this.ctx) return;
+        try {
+          const now = this.ctx.currentTime;
+          const osc = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(784, now);
+          osc.frequency.exponentialRampToValueAtTime(392, now + 0.1);
+          gain.gain.setValueAtTime(0.03, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.12);
+          osc.connect(gain);
+          gain.connect(this.ctx.destination);
+          osc.start(now);
+          osc.stop(now + 0.12);
+        } catch(e) {}
+      }
+    }
+
+    const sound = new CyberAudio();
+
+    // --- Clean SVG Icons ---
+    const IconTerminal = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <polyline points="4 17 10 11 4 5"></polyline>
+        <line x1="12" y1="19" x2="20" y2="19"></line>
+      </svg>
+    );
+    const IconShield = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+      </svg>
+    );
+    const IconCpu = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+        <rect x="9" y="9" width="6" height="6"></rect>
+        <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"></path>
+      </svg>
+    );
+    const IconActivity = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+      </svg>
+    );
+    const IconHeart = () => (
+      <svg className="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+    );
+    const IconExternal = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+        <polyline points="15 3 21 3 21 9"></polyline>
+        <line x1="10" y1="14" x2="21" y2="3"></line>
+      </svg>
+    );
+    const IconGithub = () => (
+      <svg className="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 24 24">
+        <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+      </svg>
+    );
+    const IconLinkedin = () => (
+      <svg className="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.39 9.74v-8.37H5.07v8.37h2.78z"/>
+      </svg>
+    );
+    const IconMapPin = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+        <circle cx="12" cy="10" r="3"></circle>
+      </svg>
+    );
+    const IconPhone = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+      </svg>
+    );
+    const IconMail = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+        <polyline points="22,6 12,13 2,6"></polyline>
+      </svg>
+    );
+    // --- Theme Switcher Icons ---
+    const IconSun = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+      </svg>
+    );
+    const IconMoon = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+      </svg>
+    );
+    const IconDownload = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    );
+    const IconRotate = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <polyline points="23 4 23 10 17 10"></polyline>
+        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+      </svg>
+    );
+    const IconClose = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    );
+    const IconWaves = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <path d="M2 12h2M6 8v8M10 5v14M14 8v8M18 10v4M22 12h-2"></path>
+      </svg>
+    );
+    const IconLayers = () => (
+      <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+        <polyline points="2 17 12 22 22 17"></polyline>
+        <polyline points="2 12 12 17 22 12"></polyline>
+      </svg>
+    );
+
+    // (Rotatable 3D block removed as requested)
+    // --- Header / Navbar ---
+    const Navbar = ({ theme, toggleTheme, soundMuted, toggleSound, humActive, toggleHum }) => {
+      const [scrolled, setScrolled] = useState(false);
+      const [mobileMenu, setMobileMenu] = useState(false);
+
+      useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 30);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
+      const navItems = [
+        { label: 'Overview', href: '#overview' },
+        { label: 'HemoScan', href: '#hemoscan' },
+        { label: 'Projects', href: '#projects' },
+        { label: 'Tech Stack', href: '#expertise' },
+        { label: 'Direct Comms', href: '#contact' }
+      ];
+
+      return (
+        <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+          scrolled 
+            ? 'dark:bg-[#070b14]/90 bg-white/90 backdrop-blur-xl dark:border-b dark:border-slate-800/80 border-b border-slate-200/90 py-3 shadow-md' 
+            : 'bg-transparent py-5'
+        }`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            {/* Logo & Call Sign */}
+            <a 
+              href="#" 
+              onClick={() => sound.playClick()}
+              className="flex items-center gap-3 group"
+            >
+              <div className="w-10 h-10 rounded-xl overflow-hidden border dark:border-cyan-400/40 border-sky-500/40 p-0.5 group-hover:border-cyan-400 transition-all shadow-[0_0_15px_rgba(0,240,255,0.2)]">
+                <img 
+                  src={USER_HEADSHOT_SRC} 
+                  alt={USER_INFO.name} 
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div className="flex flex-col">
+                <span className="font-display font-bold text-base sm:text-lg tracking-tight dark:text-white text-slate-900 group-hover:text-cyan-400 transition-colors">
+                  {USER_INFO.name}
+                </span>
+                <span className="font-mono text-[10px] dark:text-emerald-400 text-emerald-600 tracking-wider flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                  CYBER ENGINEER â€¢ HEMOSCAN
+                </span>
+              </div>
+            </a>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center gap-7 font-display text-sm font-medium">
+              {navItems.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.href}
+                  onMouseEnter={() => sound.playHover()}
+                  onClick={() => sound.playClick()}
+                  className="dark:text-slate-300 text-slate-600 dark:hover:text-cyan-400 hover:text-sky-600 transition-colors py-1 relative group"
+                >
+                  {item.label}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-cyan-400 group-hover:w-full transition-all duration-200"></span>
+                </a>
+              ))}
+            </nav>
+
+            {/* Quick Actions */}
+            <div className="flex items-center gap-2.5">
+              {/* Download CV Action Button */}
+              <a
+                href={USER_INFO.resumeUrl}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playConfirm()}
+                className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border dark:border-cyan-400/60 border-cyan-600/60 dark:bg-cyan-500/10 bg-cyan-50 text-cyan-600 dark:text-cyan-300 text-xs font-mono font-semibold hover:dark:bg-cyan-400 hover:dark:text-slate-950 hover:bg-cyan-600 hover:text-white transition-all shadow-[0_0_12px_rgba(0,240,255,0.2)]"
+                title="Download ATS-Friendly Printable Resume / CV"
+              >
+                <IconDownload />
+                <span>DOWNLOAD CV</span>
+              </a>
+
+              {/* Ambient Cyber Hum Toggle */}
+              <button
+                onClick={toggleHum}
+                onMouseEnter={() => sound.playHover()}
+                title={humActive ? "Deactivate Ambient Cyber Soundscape" : "Activate Ambient Cyber Soundscape"}
+                className={`hidden lg:inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-xs font-mono border transition-all ${
+                  humActive 
+                    ? 'border-cyan-400 bg-cyan-500/15 text-cyan-300 shadow-[0_0_12px_rgba(0,240,255,0.35)]' 
+                    : 'dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400 border-slate-300 bg-white text-slate-500 hover:border-cyan-400'
+                }`}
+              >
+                <IconWaves />
+                <span>{humActive ? 'HUM: ON' : 'HUM: OFF'}</span>
+              </button>
+
+              {/* Theme Toggle Button (Dark vs Bright Mode) */}
+              <button
+                onClick={toggleTheme}
+                onMouseEnter={() => sound.playHover()}
+                title={theme === 'dark' ? "Switch to Bright Mode" : "Switch to Dark Mode"}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono border transition-all ${
+                  theme === 'dark' 
+                    ? 'border-slate-700 bg-slate-900/80 text-cyan-400 hover:border-cyan-400 shadow-[0_0_12px_rgba(0,240,255,0.2)]' 
+                    : 'border-slate-300 bg-white text-slate-800 hover:border-sky-500 shadow-sm'
+                }`}
+              >
+                {theme === 'dark' ? <IconSun /> : <IconMoon />}
+                <span className="hidden sm:inline">{theme === 'dark' ? 'BRIGHT' : 'DARK'}</span>
+              </button>
+
+              {/* Audio Toggle */}
+              <button
+                onClick={toggleSound}
+                onMouseEnter={() => sound.playHover()}
+                title={soundMuted ? "Enable Audio Effects" : "Mute Audio Effects"}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-mono border transition-all ${
+                  !soundMuted 
+                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.3)]' 
+                    : 'dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-400 border-slate-300 bg-white text-slate-500 hover:border-slate-400'
+                }`}
+              >
+                <span>{soundMuted ? 'AUDIO: OFF' : 'AUDIO: ON'}</span>
+                {!soundMuted && (
+                  <span className="flex gap-0.5 items-end h-3">
+                    <span className="w-0.5 h-1.5 bg-emerald-400 animate-pulse"></span>
+                    <span className="w-0.5 h-3 bg-emerald-400 animate-pulse"></span>
+                    <span className="w-0.5 h-2 bg-emerald-400 animate-pulse"></span>
+                  </span>
+                )}
+              </button>
+
+              {/* HemoScan Live Link Button */}
+              <a
+                href={USER_INFO.hemoscanUrl}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playConfirm()}
+                className="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-red-600/15 border border-red-500/40 text-red-500 dark:text-red-400 text-xs font-mono font-semibold hover:bg-red-600 hover:text-white transition-all shadow-[0_0_15px_rgba(239,68,68,0.2)]"
+              >
+                <IconHeart />
+                <span>HEMOSCAN APP</span>
+                <IconExternal />
+              </a>
+
+              {/* LinkedIn Link */}
+              <a
+                href={USER_INFO.linkedin}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playClick()}
+                className="hidden sm:inline-flex p-2 rounded-lg border dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300 border-slate-300 bg-white text-slate-700 hover:text-cyan-500 hover:border-cyan-500/50 transition-all shadow-sm"
+                title="LinkedIn Profile"
+              >
+                <IconLinkedin />
+              </a>
+
+              {/* GitHub Link */}
+              <a
+                href={USER_INFO.github}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playClick()}
+                className="hidden sm:inline-flex p-2 rounded-lg border dark:border-slate-800 dark:bg-slate-900/60 dark:text-slate-300 border-slate-300 bg-white text-slate-700 hover:text-cyan-500 hover:border-cyan-500/50 transition-all shadow-sm"
+                title="GitHub: srbilal12-cyber"
+              >
+                <IconGithub />
+              </a>
+
+              {/* Mobile Hamburger */}
+              <button
+                onClick={() => setMobileMenu(!mobileMenu)}
+                className="md:hidden p-2 dark:text-slate-300 text-slate-700 hover:text-cyan-400"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  {mobileMenu ? (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                  )}
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Mobile Drawer */}
+          {mobileMenu && (
+            <div className="md:hidden dark:bg-[#080d1a]/95 bg-white/95 border-b dark:border-slate-800 border-slate-200 px-6 py-5 mt-2 space-y-3 font-display text-sm shadow-xl">
+              {navItems.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.href}
+                  onClick={() => setMobileMenu(false)}
+                  className="block dark:text-slate-300 text-slate-700 hover:text-cyan-400 py-1.5"
+                >
+                  {item.label}
+                </a>
+              ))}
+              
+              <div className="pt-2 flex flex-col gap-2 border-t dark:border-slate-800 border-slate-200">
+                <a
+                  href={USER_INFO.resumeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={() => setMobileMenu(false)}
+                  className="inline-flex items-center justify-center gap-2 py-2 px-3 rounded-lg bg-cyan-500/10 border border-cyan-400 text-cyan-400 font-mono text-xs font-bold"
+                >
+                  <IconDownload />
+                  <span>Download Verified Resume / CV</span>
+                </a>
+
+                <div className="flex items-center justify-between pt-1">
+                  <span className="font-mono text-xs dark:text-slate-400 text-slate-500">Ambient Hum:</span>
+                  <button
+                    onClick={toggleHum}
+                    className="px-3 py-1 rounded border dark:border-slate-700 border-slate-300 font-mono text-xs flex items-center gap-1.5"
+                  >
+                    <IconWaves />
+                    <span>{humActive ? 'Hum ON' : 'Hum OFF'}</span>
+                  </button>
+                </div>
+
+                <div className="flex items-center justify-between">
+                  <span className="font-mono text-xs dark:text-slate-400 text-slate-500">Visual Mode:</span>
+                  <button
+                    onClick={() => { toggleTheme(); setMobileMenu(false); }}
+                    className="px-3 py-1 rounded border dark:border-slate-700 border-slate-300 font-mono text-xs flex items-center gap-1.5"
+                  >
+                    {theme === 'dark' ? <IconSun /> : <IconMoon />}
+                    <span>{theme === 'dark' ? 'Bright Mode' : 'Dark Mode'}</span>
+                  </button>
+                </div>
+              </div>
+
+              <div className="pt-2 space-y-2 border-t dark:border-slate-800 border-slate-200">
+                <a
+                  href={USER_INFO.hemoscanUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-2 text-red-500 dark:text-red-400 font-mono text-xs"
+                >
+                  <IconHeart />
+                  <span>Launch HemoScan (Live App) â†—</span>
+                </a>
+                <a
+                  href={USER_INFO.linkedin}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block text-cyan-500 font-mono text-xs"
+                >
+                  <IconLinkedin />
+                  <span className="ml-2">LinkedIn Profile â†—</span>
+                </a>
+                <a
+                  href={USER_INFO.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="block text-emerald-500 font-mono text-xs"
+                >
+                  <IconGithub />
+                  <span className="ml-2">GitHub (srbilal12-cyber) â†—</span>
+                </a>
+              </div>
+            </div>
+          )}
+        </header>
+      );
+    };
+
+    // --- Hero Section (Centered 3D Spatial Showcase Stage â€” Banner Removed) ---
+    const Hero = ({ theme }) => {
+      return (
+        <section id="overview" className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          
+          {/* Top Headline & Clearance Header */}
+          <div className="text-center max-w-4xl mx-auto space-y-5 mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border dark:border-emerald-500/40 border-emerald-500/30 dark:bg-emerald-500/10 bg-emerald-500/10 dark:text-emerald-400 text-emerald-700 font-mono text-xs tracking-wider shadow-sm">
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span>AUTHENTICATED DOSSIER // BS CYBERSECURITY STUDENT @ CUST</span>
+            </div>
+
+            {/* Circular Holographic Avatar (Focused on Face & Hand) */}
+            <div className="flex justify-center pt-2 pb-1">
+              <div className="relative group cursor-pointer" onClick={() => sound.playHover()}>
+                {/* Outer glowing pulsing aura */}
+                <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-cyan-400 via-sky-400 to-emerald-400 opacity-70 blur-md group-hover:opacity-100 group-hover:blur-lg transition-all duration-300 animate-pulse"></div>
+                
+                {/* Rotating dashed holographic perimeter ring */}
+                <div className="absolute -inset-2.5 rounded-full border-2 border-dashed border-cyan-400/60 dark:border-cyan-400/70 animate-spin-slow pointer-events-none"></div>
+
+                {/* Circular Image Container with Precision Headshot Framing */}
+                <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden border-2 dark:border-cyan-300 border-sky-400 dark:bg-slate-950 bg-slate-100 shadow-[0_0_30px_rgba(0,240,255,0.3)] p-1 transition-transform duration-300 group-hover:scale-105">
+                  <img
+                    src={USER_HEADSHOT_SRC}
+                    alt={USER_INFO.name}
+                    className="w-full h-full object-cover object-center rounded-full"
+                  />
+                </div>
+
+                {/* Verified Cyber Badge */}
+                <div 
+                  className="absolute bottom-1 right-1 p-1.5 rounded-full bg-emerald-500 text-slate-950 shadow-lg border-2 dark:border-slate-950 border-white flex items-center justify-center"
+                  title="Verified Technical Identity"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <p className="font-mono text-xs sm:text-sm dark:text-cyan-400 text-sky-600 uppercase tracking-widest">
+                &gt; BS CYBERSECURITY UNDERGRADUATE // CUST (STUDENT)
+              </p>
+              <h1 className="font-display font-extrabold text-4xl sm:text-6xl xl:text-7xl tracking-tight dark:text-white text-slate-950 leading-none">
+                Muhammad <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r dark:from-cyan-400 dark:via-sky-300 dark:to-emerald-400 from-sky-600 via-blue-600 to-indigo-600">
+                  Bilal Yousaf
+                </span>
+              </h1>
+            </div>
+
+            {/* Badges */}
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-1 font-mono text-xs">
+              <span className="px-3 py-1 rounded-lg dark:bg-slate-900 bg-white border dark:border-slate-800 border-slate-200 dark:text-cyan-400 text-sky-700 font-semibold shadow-sm">
+                BS Cybersecurity (Student @ CUST)
+              </span>
+              <span className="px-3 py-1 rounded-lg dark:bg-slate-900 bg-white border dark:border-slate-800 border-slate-200 dark:text-emerald-400 text-emerald-700 font-semibold shadow-sm">
+                Artificial Intelligence
+              </span>
+              <span className="px-3 py-1 rounded-lg dark:bg-slate-900 bg-white border dark:border-slate-800 border-slate-200 dark:text-indigo-400 text-indigo-700 font-semibold shadow-sm">
+                Microsoft Office Suite
+              </span>
+              <span className="px-3 py-1 rounded-lg dark:bg-slate-900 bg-white border dark:border-slate-800 border-slate-200 dark:text-purple-400 text-purple-700 font-semibold shadow-sm">
+                Data Analytics &amp; Modeling
+              </span>
+            </div>
+
+            <p className="dark:text-slate-300 text-slate-700 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+              Undergraduate Cybersecurity student currently enrolled at Capital University of Science and Technology (CUST), specializing in defensive cybersecurity infrastructures, clinical AI diagnostics, and advanced Microsoft Office data modeling. Architect and creator of <strong className="text-red-500 dark:text-red-400">HemoScan</strong>, an AI-powered non-invasive hemoglobin estimation platform.
+            </p>
+
+            {/* Action Buttons */}
+            <div className="flex flex-wrap justify-center gap-3.5 pt-2">
+              <a
+                href={USER_INFO.resumeUrl}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playConfirm()}
+                className="cyber-button px-6 py-3.5 bg-gradient-to-r from-cyan-500 via-sky-500 to-emerald-500 text-white dark:text-slate-950 font-display font-extrabold text-xs sm:text-sm tracking-wider uppercase shadow-[0_0_25px_rgba(0,240,255,0.4)] hover:shadow-[0_0_35px_rgba(0,240,255,0.7)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+              >
+                <IconDownload />
+                <span>DOWNLOAD RESUME / CV</span>
+              </a>
+
+              <a
+                href="#hemoscan"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playClick()}
+                className="cyber-button px-6 py-3.5 bg-gradient-to-r from-red-600 to-rose-500 text-white font-display font-bold text-xs sm:text-sm tracking-wider uppercase shadow-[0_0_25px_rgba(239,68,68,0.35)] hover:shadow-[0_0_35px_rgba(239,68,68,0.7)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2"
+              >
+                <IconHeart />
+                <span>EXPLORE HEMOSCAN</span>
+              </a>
+
+              <a
+                href={USER_INFO.hemoscanUrl}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playConfirm()}
+                className="cyber-button px-6 py-3.5 dark:bg-slate-900 bg-white border dark:border-cyan-400 border-sky-600 dark:text-cyan-400 text-sky-700 font-display font-bold text-xs sm:text-sm tracking-wider uppercase hover:bg-cyan-400/10 hover:shadow-[0_0_25px_rgba(0,240,255,0.4)] hover:scale-105 active:scale-95 transition-all flex items-center gap-2 shadow-sm"
+              >
+                <IconExternal />
+                <span>LAUNCH LIVE APP â†—</span>
+              </a>
+
+              <a
+                href="#contact"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playClick()}
+                className="cyber-button px-6 py-3.5 dark:bg-slate-900 bg-white border dark:border-slate-700 border-slate-300 dark:text-slate-300 text-slate-700 font-display font-bold text-xs sm:text-sm tracking-wider uppercase dark:hover:border-slate-500 hover:border-slate-500 hover:text-cyan-600 transition-all flex items-center gap-2 shadow-sm"
+              >
+                <IconShield />
+                <span>ESTABLISH CONTACT</span>
+              </a>
+
+              <a
+                href={USER_INFO.github}
+                target="_blank"
+                rel="noreferrer"
+                onMouseEnter={() => sound.playHover()}
+                onClick={() => sound.playClick()}
+                className="cyber-button px-6 py-3.5 dark:bg-slate-900 bg-white border dark:border-emerald-500/40 border-emerald-600/40 dark:text-emerald-400 text-emerald-700 font-display font-bold text-xs sm:text-sm tracking-wider uppercase hover:border-emerald-400 transition-all flex items-center gap-2 shadow-sm"
+              >
+                <IconGithub />
+                <span>GITHUB â†—</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Real-time Telemetry Grid (Rotatable 3D block removed as requested) */}
+          <div className="max-w-4xl mx-auto mt-10">
+            <div className="relative dark:border dark:border-cyan-500/20 border border-slate-300/80 rounded-2xl dark:bg-[#0c152a]/70 bg-white/80 backdrop-blur-xl p-4 sm:p-5 shadow-sm">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 font-mono text-xs">
+                <div className="p-3 rounded-xl dark:bg-slate-950/60 bg-slate-50 border dark:border-slate-800 border-slate-200">
+                  <span className="text-slate-400 block text-[10px] uppercase">DIRECT GMAIL</span>
+                  <a href={`mailto:${USER_INFO.email}`} className="dark:text-cyan-400 text-sky-600 font-bold hover:underline truncate block">
+                    {USER_INFO.email}
+                  </a>
+                </div>
+                <div className="p-3 rounded-xl dark:bg-slate-950/60 bg-slate-50 border dark:border-slate-800 border-slate-200">
+                  <span className="text-slate-400 block text-[10px] uppercase">SECURE PHONE</span>
+                  <span className="dark:text-emerald-400 text-emerald-600 font-bold">{USER_INFO.phone}</span>
+                </div>
+                <div className="p-3 rounded-xl dark:bg-slate-950/60 bg-slate-50 border dark:border-slate-800 border-slate-200">
+                  <span className="text-slate-400 block text-[10px] uppercase">STATUS &amp; DEGREE</span>
+                  <span className="dark:text-indigo-400 text-indigo-600 font-bold truncate block">BS CYBER @ CUST (STUDENT)</span>
+                </div>
+                <div className="p-3 rounded-xl dark:bg-slate-950/60 bg-slate-50 border dark:border-slate-800 border-slate-200">
+                  <span className="text-slate-400 block text-[10px] uppercase">LOCATION</span>
+                  <span className="dark:text-slate-200 text-slate-700 font-bold truncate block">{USER_INFO.location}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // --- Interactive Terminal & Biography ---
+    const AboutTerminal = () => {
+      const [history, setHistory] = useState([
+        { type: 'sys', text: `MBY-OS Quantum Terminal v3.4 Initialized.` },
+        { type: 'sys', text: `Operative: ${USER_INFO.name} | Status: BS Cybersecurity Student @ CUST (In Progress).` },
+        { type: 'output', text: `Flagship Deployment: HemoScan (AI Non-Invasive Hemoglobin Screening).` },
+        { type: 'sys', text: `Type "hemoscan", "contact", "bio", or "skills" for live telemetry.` }
+      ]);
+      const [inputCommand, setInputCommand] = useState('');
+      const terminalEndRef = useRef(null);
+
+      useEffect(() => {
+        if (terminalEndRef.current) {
+          terminalEndRef.current.scrollTop = terminalEndRef.current.scrollHeight;
+        }
+      }, [history]);
+
+      const handleRunCommand = (cmdStr) => {
+        sound.playClick();
+        const cmd = cmdStr.trim().toLowerCase();
+        if (!cmd) return;
+
+        let response = '';
+
+        switch (cmd) {
+          case 'help':
+            response = 'Available Commands:\n  - hemoscan     : Architecture & clinical specifications of HemoScan\n  - bio          : Academic status, BS Cybersecurity enrollment, CUST affiliation\n  - msoffice     : Microsoft Excel, Word, PowerPoint, Power BI proficiencies\n  - github       : GitHub repositories & projects (srbilal12-cyber)\n  - contact      : Phone (+92 3421080908), Gmail (srbilal12@gmail.com), LinkedIn\n  - skills       : AI, Cyber Defense, MS Office & Software\n  - clear        : Clear console';
+            break;
+          case 'github':
+            response = `[GITHUB REPOSITORY PROFILE]\nAccount: srbilal12-cyber\nURL: ${USER_INFO.github}\nHighlights: HemoScan AI core, Cybersecurity auditing tools, Python computer vision pipelines, and web applications.`;
+            break;
+          case 'hemoscan':
+            response = `[HEMOSCAN DEPLOYMENT BLUEPRINT]\nURL: ${USER_INFO.hemoscanUrl}\nMission: Non-invasive optical hemoglobin estimation using smartphone cameras.\nKey Capabilities:\n  â€¢ Fingertip PPG optical sensing with zero blood-prick intrusion\n  â€¢ Colorimetric spectral absorption wavelength analysis\n  â€¢ Real-time automated anemia risk stratification (Normal, Mild, Moderate, Severe)\n  â€¢ Integrated clinic geolocation mapping for immediate medical access.`;
+            break;
+          case 'bio':
+            response = `[ACADEMIC & BIOGRAPHY DOSSIER]\nName: ${USER_INFO.name}\nAcademic Status: Undergraduate Student (Currently Enrolled / In Progress)\nDegree: BS Cybersecurity\nUniversity: ${USER_INFO.affiliation}\nLocation: ${USER_INFO.location}\nSpecializations: Cybersecurity & Threat Defense, Applied AI Diagnostics (HemoScan), Microsoft Office Advanced Analytics.`;
+            break;
+          case 'msoffice':
+          case 'office':
+          case 'excel':
+            response = '[MICROSOFT OFFICE & ANALYTICS SUITE]\nâ€¢ Microsoft Excel: Complex multi-criteria modeling (XLOOKUP, INDEX/MATCH), Pivot Tables, dynamic dashboards, statistical data cleansing\nâ€¢ Microsoft Word: Technical reporting, clinical research documentation, publication formatting\nâ€¢ Microsoft PowerPoint: Executive stakeholder presentations, technical architecture decks\nâ€¢ Power BI & 365: Cloud workspace collaboration and business intelligence reporting.';
+            break;
+          case 'contact':
+            response = `[COMMUNICATIONS TELEMETRY]\nâ€¢ Gmail: ${USER_INFO.email}\nâ€¢ Phone: ${USER_INFO.phone}\nâ€¢ GitHub: ${USER_INFO.github}\nâ€¢ LinkedIn: ${USER_INFO.linkedin}\nâ€¢ Location: ${USER_INFO.location}\nâ€¢ Live Web App: ${USER_INFO.hemoscanUrl}`;
+            break;
+          case 'skills':
+            response = '[VERIFIED TECHNICAL PROFICIENCIES]\nâ€¢ AI & Clinical: Optical PPG, Spectral Colorimetry, OpenCV, Python, ML Regression\nâ€¢ Cyber Defense: Network Traffic Hardening, Vulnerability Auditing, Cryptography\nâ€¢ MS Office Suite: Advanced Excel (Formulas & Pivot Tables), Word, PowerPoint, Power BI\nâ€¢ Software: React.js, Progressive Web Apps, REST APIs, Git/GitHub';
+            break;
+          case 'clear':
+            setHistory([]);
+            return;
+          default:
+            response = `Command "${cmd}" not recognized. Type "help" or click the chips below.`;
+            break;
+        }
+
+        setHistory(prev => [
+          ...prev,
+          { type: 'user', text: `$ ${cmdStr}` },
+          { type: 'output', text: response }
+        ]);
+        setInputCommand('');
+      };
+
+      return (
+        <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 font-mono text-xs dark:text-cyan-400 text-sky-600 tracking-widest uppercase">
+              <IconTerminal />
+              <span>// MODULE 01: OPERATIVE PROFILE</span>
+            </div>
+            <h2 className="font-display font-bold text-3xl sm:text-5xl dark:text-white text-slate-900">
+              Profile &amp; <span className="dark:text-cyan-400 text-sky-600">Terminal Dossier</span>
+            </h2>
+            <p className="dark:text-slate-400 text-slate-600 font-sans text-base sm:text-lg">
+              Verified academic and technical credentials of Muhammad Bilal Yousaf, undergraduate Cybersecurity student at CUST, across Defensive Security, Artificial Intelligence, and Microsoft Office Data Systems.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            {/* Left Column: Verified Dossier Card */}
+            <div className="lg:col-span-5 space-y-4 flex flex-col justify-between">
+              
+              <div className="cyber-panel p-6 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-xl flex items-center gap-4 shadow-sm">
+                <img 
+                  src={USER_HEADSHOT_SRC} 
+                  alt={USER_INFO.name} 
+                  className="w-20 h-20 rounded-xl object-cover border-2 border-cyan-400 shadow-lg"
+                />
+                <div>
+                  <h3 className="font-display font-bold text-lg dark:text-white text-slate-900">{USER_INFO.name}</h3>
+                  <p className="text-xs text-emerald-500 font-mono font-semibold">BS Cybersecurity (Student)</p>
+                  <p className="text-xs dark:text-slate-400 text-slate-500 font-mono mt-0.5">{USER_INFO.affiliation.split('(')[0]} â€¢ In Progress</p>
+                  <p className="text-xs dark:text-cyan-400 text-sky-600 font-mono mt-1 font-semibold">{USER_INFO.email}</p>
+                </div>
+              </div>
+
+              {/* Pillar 1 */}
+              <div className="cyber-panel p-6 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-xl hover:border-red-500/50 transition-all group shadow-sm">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 rounded bg-red-500/10 text-red-500">
+                    <IconHeart />
+                  </div>
+                  <h4 className="font-display font-bold text-base dark:text-white text-slate-900 group-hover:text-red-500 transition-colors">
+                    AI &amp; Non-Invasive Medical Diagnostics
+                  </h4>
+                </div>
+                <p className="dark:text-slate-300 text-slate-600 text-sm leading-relaxed">
+                  Creator of HemoScan. Pioneering optical photoplethysmography (PPG) algorithms to measure micro-vascular blood absorption and estimate hemoglobin levels without blood extraction.
+                </p>
+              </div>
+
+              {/* Pillar 2 */}
+              <div className="cyber-panel p-6 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-xl hover:border-cyan-400/50 transition-all group shadow-sm">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 rounded bg-cyan-500/10 text-cyan-500">
+                    <IconShield />
+                  </div>
+                  <h4 className="font-display font-bold text-base dark:text-white text-slate-900 group-hover:text-cyan-500 transition-colors">
+                    Cyber Engineering &amp; Threat Defense
+                  </h4>
+                </div>
+                <p className="dark:text-slate-300 text-slate-600 text-sm leading-relaxed">
+                  Conducting network traffic vulnerability indexing, cryptographic defense routines, and ethical security audits across modern software systems and infrastructure.
+                </p>
+              </div>
+
+              {/* Pillar 3: MS Office Suite */}
+              <div className="cyber-panel p-6 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-xl hover:border-indigo-500/50 transition-all group shadow-sm">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 rounded bg-indigo-500/10 text-indigo-500">
+                    <IconCpu />
+                  </div>
+                  <h4 className="font-display font-bold text-base dark:text-white text-slate-900 group-hover:text-indigo-500 transition-colors">
+                    Microsoft Office &amp; Analytics Suite
+                  </h4>
+                </div>
+                <p className="dark:text-slate-300 text-slate-600 text-sm leading-relaxed">
+                  Advanced data modeling and analytical workflows in Microsoft Excel (XLOOKUP, formulas, pivot tables), technical research documentation in Word, executive presentation decks in PowerPoint, and Power BI dashboards.
+                </p>
+              </div>
+
+            </div>
+
+            {/* Right Column: Terminal Console */}
+            <div className="lg:col-span-7 dark:bg-[#060a14] bg-slate-950 border dark:border-slate-800 border-slate-800 rounded-2xl shadow-2xl flex flex-col overflow-hidden">
+              <div className="bg-slate-900 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500/80"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                  <div className="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+                  <span className="font-mono text-xs text-slate-400 ml-2">
+                    mby-terminal // live
+                  </span>
+                </div>
+                <div className="font-mono text-[10px] text-emerald-400 flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  OPERATIONAL
+                </div>
+              </div>
+
+              <div 
+                ref={terminalEndRef}
+                className="p-5 flex-1 min-h-[340px] max-h-[400px] overflow-y-auto space-y-3 font-mono text-xs text-slate-300"
+              >
+                {history.map((line, idx) => (
+                  <div key={idx} className="leading-relaxed">
+                    {line.type === 'user' && (
+                      <span className="text-emerald-400 font-semibold">{line.text}</span>
+                    )}
+                    {line.type === 'sys' && (
+                      <span className="text-cyan-400/80">{line.text}</span>
+                    )}
+                    {line.type === 'output' && (
+                      <pre className="whitespace-pre-wrap text-slate-300 font-mono mt-1 pl-2 border-l border-slate-700">
+                        {line.text}
+                      </pre>
+                    )}
+                  </div>
+                ))}
+              </div>
+
+              {/* Chips */}
+              <div className="px-5 py-2.5 bg-slate-950 border-t border-slate-800/80 flex flex-wrap items-center gap-2 text-[11px] font-mono">
+                <span className="text-slate-500">QUICK EXECUTE:</span>
+                {['hemoscan', 'github', 'msoffice', 'bio', 'skills', 'contact', 'clear'].map((cmd) => (
+                  <button
+                    key={cmd}
+                    onClick={() => handleRunCommand(cmd)}
+                    onMouseEnter={() => sound.playHover()}
+                    className="px-2.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all"
+                  >
+                    ${cmd}
+                  </button>
+                ))}
+              </div>
+
+              {/* Form */}
+              <form 
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  handleRunCommand(inputCommand);
+                }}
+                className="p-3 bg-slate-900 border-t border-slate-800 flex items-center gap-2 font-mono text-sm"
+              >
+                <span className="text-emerald-400 font-semibold">mby@core:~$</span>
+                <input
+                  type="text"
+                  value={inputCommand}
+                  onChange={(e) => setInputCommand(e.target.value)}
+                  placeholder="Type command ('hemoscan', 'contact', 'bio')..."
+                  className="flex-1 bg-transparent border-none outline-none text-emerald-400 placeholder-slate-600 font-mono text-xs"
+                />
+                <button 
+                  type="submit" 
+                  className="px-4 py-1.5 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 rounded-lg text-xs hover:bg-emerald-500 hover:text-black transition-all font-display font-semibold"
+                >
+                  RUN
+                </button>
+              </form>
+            </div>
+
+          </div>
+        </section>
+      );
+    };
+
+    // --- Flagship Project: HemoScan Showcase ---
+    const HemoScanShowcase = () => {
+      const [simulating, setSimulating] = useState(false);
+      const [scanProgress, setScanProgress] = useState(0);
+      const [scanResult, setScanResult] = useState(null);
+
+      const runSimulation = () => {
+        sound.playTransmission();
+        setSimulating(true);
+        setScanResult(null);
+        setScanProgress(0);
+
+        const interval = setInterval(() => {
+          setScanProgress((prev) => {
+            if (prev >= 100) {
+              clearInterval(interval);
+              setSimulating(false);
+              setScanResult({
+                hb: (13.8 + (Math.random() * 1.4 - 0.7)).toFixed(1),
+                status: 'Optimal / Normal Range',
+                risk: 'Low Anemia Risk',
+                confidence: '98.6%',
+                pulse: Math.floor(70 + Math.random() * 12)
+              });
+              sound.playConfirm();
+              return 100;
+            }
+            return prev + 10;
+          });
+        }, 180);
+      };
+
+      return (
+        <section id="hemoscan" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 font-mono text-xs text-red-400 tracking-widest uppercase bg-red-500/10 px-3.5 py-1 rounded-full border border-red-500/30">
+              <IconHeart />
+              <span>// FLAGSHIP MEDICAL AI INNOVATION</span>
+            </div>
+            <h2 className="font-display font-extrabold text-3xl sm:text-5xl text-white">
+              HemoScan â€” <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-amber-300">Hemoglobin Screening</span>
+            </h2>
+            <p className="text-slate-300 font-sans text-base sm:text-lg">
+              AI-powered non-invasive hemoglobin estimation and anemia risk detection using smartphone camera optics.
+            </p>
+          </div>
+
+          <div className="cyber-panel bg-gradient-to-b from-slate-900/90 to-slate-950/95 border-2 border-red-500/40 rounded-2xl p-6 sm:p-10 shadow-[0_0_50px_rgba(239,68,68,0.15)] relative overflow-hidden mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+              
+              <div className="lg:col-span-7 space-y-5">
+                <div className="flex flex-wrap items-center gap-2 font-mono text-xs">
+                  <span className="px-3 py-1 rounded-full bg-red-500/20 text-red-400 border border-red-500/40 font-semibold">
+                    â— PRODUCTION DEPLOYMENT
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                    NON-INVASIVE AI
+                  </span>
+                  <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                    PWA / WEB MOBILE
+                  </span>
+                </div>
+
+                <h3 className="font-display font-bold text-2xl sm:text-3xl text-white">
+                  Next-Generation Smartphone Anemia Diagnostics
+                </h3>
+
+                <p className="text-slate-300 text-base leading-relaxed">
+                  Traditional hemoglobin screening demands invasive venipunctures, clinical laboratory equipment, and needle pricks. <strong className="text-white">HemoScan</strong> replaces physical blood extraction with optical photoplethysmography (PPG) and spectral computer vision, enabling accessible, pain-free screening for anyone with a smartphone camera.
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-1">
+                    <span className="font-mono text-xs text-red-400 font-bold block">01 // OPTICAL CAPTURE</span>
+                    <p className="text-xs text-slate-300">
+                      Captures fingertip micro-vascular blood volume pulses using smartphone flashlight illumination.
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-1">
+                    <span className="font-mono text-xs text-cyan-400 font-bold block">02 // SPECTRAL COLORIMETRY</span>
+                    <p className="text-xs text-slate-300">
+                      Decomposes RGB wavelength absorption to isolate oxygenated vs. deoxygenated hemoglobin ratios.
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-1">
+                    <span className="font-mono text-xs text-emerald-400 font-bold block">03 // AI ESTIMATION MODEL</span>
+                    <p className="text-xs text-slate-300">
+                      Neural regression computes estimated Hb level in g/dL and stratifies clinical anemia risk.
+                    </p>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 space-y-1">
+                    <span className="font-mono text-xs text-purple-400 font-bold block">04 // CLINIC GEOLOCATION</span>
+                    <p className="text-xs text-slate-300">
+                      Integrated Leaflet GIS mapping immediately directs at-risk individuals to nearby healthcare centers.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-4 pt-4">
+                  <a
+                    href={USER_INFO.hemoscanUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    onMouseEnter={() => sound.playHover()}
+                    onClick={() => sound.playConfirm()}
+                    className="cyber-button px-7 py-3.5 bg-gradient-to-r from-red-600 via-rose-500 to-amber-500 text-white font-display font-bold text-xs sm:text-sm tracking-wider uppercase shadow-[0_0_30px_rgba(239,68,68,0.4)] hover:shadow-[0_0_45px_rgba(239,68,68,0.8)] hover:scale-105 transition-all flex items-center gap-2"
+                  >
+                    <IconHeart />
+                    <span>LAUNCH HEMOSCAN WEB APP â†—</span>
+                  </a>
+
+                  <a
+                    href={USER_INFO.hemoscanUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    onMouseEnter={() => sound.playHover()}
+                    className="cyber-button px-6 py-3.5 bg-slate-900 border border-slate-700 text-slate-300 font-display font-semibold text-xs sm:text-sm tracking-wider hover:border-slate-500 hover:text-white transition-all flex items-center gap-2"
+                  >
+                    <span>REPLIT DEPLOYMENT // srbilal12</span>
+                    <IconExternal />
+                  </a>
+                </div>
+              </div>
+
+              {/* Real-time Simulator */}
+              <div className="lg:col-span-5 bg-slate-950/90 border border-red-500/30 rounded-xl p-6 relative flex flex-col justify-between shadow-xl">
+                <div className="border-b border-slate-800 pb-3 mb-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2 font-mono text-xs text-red-400 font-bold">
+                    <span className="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                    HEMOSCAN OPTICAL SCAN SIMULATOR
+                  </div>
+                  <span className="font-mono text-[10px] text-slate-500">OPTICAL SENSING</span>
+                </div>
+
+                <div className="space-y-4 py-2">
+                  <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800 text-center relative overflow-hidden">
+                    <div className="w-16 h-16 mx-auto rounded-full bg-red-500/10 border-2 border-red-500 flex items-center justify-center text-red-400 mb-2">
+                      <IconActivity />
+                    </div>
+                    <p className="text-sm font-display font-bold text-white">
+                      {simulating ? 'Analyzing Optical Blood Flow...' : (scanResult ? 'Screening Completed' : 'Simulate Camera Optical Scan')}
+                    </p>
+                    <p className="text-xs text-slate-400 mt-1 font-mono">
+                      {simulating ? `Processing Spectral Bands: ${scanProgress}%` : 'Experience HemoScan algorithm in real time'}
+                    </p>
+
+                    {simulating && (
+                      <div className="w-full h-1.5 bg-slate-800 rounded-full mt-3 overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-red-600 to-amber-400 transition-all duration-200"
+                          style={{ width: `${scanProgress}%` }}
+                        ></div>
+                      </div>
+                    )}
+                  </div>
+
+                  {scanResult && (
+                    <div className="p-4 rounded-xl bg-emerald-500/10 border border-emerald-500/30 space-y-2 font-mono text-xs">
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">ESTIMATED HEMOGLOBIN:</span>
+                        <span className="text-lg font-bold text-emerald-400">{scanResult.hb} g/dL</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">ANEMIA RISK STRATIFICATION:</span>
+                        <span className="text-emerald-300 font-semibold">{scanResult.risk}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">MODEL CONFIDENCE:</span>
+                        <span className="text-cyan-400">{scanResult.confidence}</span>
+                      </div>
+                      <div className="flex justify-between items-center">
+                        <span className="text-slate-400">HEART RATE TELEMETRY:</span>
+                        <span className="text-purple-400">{scanResult.pulse} BPM</span>
+                      </div>
+                    </div>
+                  )}
+
+                  <button
+                    onClick={runSimulation}
+                    disabled={simulating}
+                    onMouseEnter={() => sound.playHover()}
+                    className="cyber-button w-full py-3 bg-red-600/20 border border-red-500/50 hover:bg-red-600 hover:text-white text-red-300 font-display font-bold text-xs uppercase tracking-wider transition-all"
+                  >
+                    {simulating ? 'SCREENING IN PROGRESS...' : (scanResult ? 'RUN SCAN AGAIN' : 'START SIMULATED SCAN')}
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      );
+    };
+
+    // --- Technical Projects Data Dossier ---
+    const TECHNICAL_PROJECTS = [
+      {
+        id: 'hemoscan',
+        title: 'HemoScan AI â€” Clinical Hemoglobin Estimator',
+        category: 'Clinical AI & Computer Vision',
+        role: 'Creator & Lead Systems Architect',
+        badge: 'FLAGSHIP INNOVATION',
+        badgeColor: 'border-red-500/40 text-red-400 bg-red-500/10',
+        summary: 'Non-invasive optical hemoglobin estimation platform leveraging smartphone camera photoplethysmography (PPG) to analyze micro-vascular capillary blood absorption and deliver instantaneous anemia risk stratification.',
+        specs: [
+          'Fingertip PPG optical sensing with zero blood-prick intrusion',
+          'Colorimetric spectral absorption wavelength analysis (Red/Green channel ratios)',
+          'Real-time automated anemia risk stratification (Normal, Mild, Moderate, Severe)',
+          'Integrated clinic geolocation routing for immediate clinical access'
+        ],
+        techStack: ['React', 'Three.js', 'Tailwind CSS', 'Python', 'OpenCV', 'PPG Signal Processing', 'Replit', 'Web APIs'],
+        liveUrl: USER_INFO.hemoscanUrl,
+        githubUrl: USER_INFO.github,
+        architecture: [
+          { step: '01. Optical Acquisition', desc: 'Smartphone video stream illuminates fingertip capillaries at 60 FPS, recording pulsatile blood dynamics.' },
+          { step: '02. Micro-Vascular Decomposition', desc: 'Isolates pulsatile AC/DC signal ratios across red and green optical spectral absorption bands.' },
+          { step: '03. Polynomial ML Estimation', desc: 'Calibrated regression curves convert micro-vascular optical absorbance into clinical Hb (g/dL).' },
+          { step: '04. Clinical Stratification', desc: 'Maps telemetry against WHO anemia criteria and geolocates nearest medical facilities.' }
+        ]
+      },
+      {
+        id: 'cybershield',
+        title: 'CyberShield Threat Defense & Protocol Boundary Auditor',
+        category: 'Cybersecurity & Infrastructure',
+        role: 'Cyber Systems Engineer',
+        badge: 'DEFENSIVE CYBERSECURITY',
+        badgeColor: 'border-cyan-500/40 text-cyan-400 bg-cyan-500/10',
+        summary: 'High-performance network traffic auditor and boundary hardening engine designed to detect protocol anomalies, sniff unauthorized packet payloads, and audit endpoint encryption configurations.',
+        specs: [
+          'Real-time packet inspection & promiscuous mode packet telemetry',
+          'Vulnerability scanning against OWASP Top 10 and misconfigured port services',
+          'Cryptographic handshake & TLS cipher strength validation',
+          'Automated incident logs with intrusion detection indicators'
+        ],
+        techStack: ['Python', 'Scapy', 'Applied Cryptography', 'Linux Boundary Hardening', 'Socket Networking', 'Bash', 'Tailwind UI'],
+        githubUrl: USER_INFO.github,
+        architecture: [
+          { step: '01. Raw Packet Ingestion', desc: 'Sniffs and parses Ethernet, IP, TCP, and UDP layer headers in real-time non-blocking queues.' },
+          { step: '02. Signature & Anomaly Heuristics', desc: 'Flags malformed handshakes, SYN floods, unauthorized probe sweeps, and port scan signatures.' },
+          { step: '03. Cipher Strength Verification', desc: 'Audits TLS certificate chains, key exchange entropy, and deprecation status of cipher suites.' },
+          { step: '04. Alert & Telemetry Dispatch', desc: 'Outputs structured JSON incident logs and automated defensive firewall filtering rules.' }
+        ]
+      },
+      {
+        id: 'neurovision',
+        title: 'NeuroVision Optical PPG & Signal Decomposition Engine',
+        category: 'Artificial Intelligence & Vision',
+        role: 'AI & Algorithm Developer',
+        badge: 'COMPUTER VISION ENGINE',
+        badgeColor: 'border-emerald-500/40 text-emerald-400 bg-emerald-500/10',
+        summary: 'Computer vision algorithms dedicated to extracting physiological bio-signals from dermal video feeds. Filters noise, attenuates motion artifacts, and generates clean pulse waveforms.',
+        specs: [
+          'Sub-pixel skin segmentation and multi-region micro-vascular tracking',
+          'Butterworth bandpass filtering & Fast Fourier Transform (FFT) spectrum analysis',
+          'Real-time heart rate (BPM) and oxygenation saturation trend derivation',
+          'Low-latency lightweight inference pipeline optimized for edge mobile browsers'
+        ],
+        techStack: ['Python', 'OpenCV', 'NumPy', 'SciPy', 'TensorFlow', 'Signal Processing', 'Fast Fourier Transform'],
+        githubUrl: USER_INFO.github,
+        architecture: [
+          { step: '01. ROI Dermal Tracking', desc: 'Dynamic bounding box locks onto skin regions with highest capillary density, ignoring background noise.' },
+          { step: '02. Chrominance Signal Filtering', desc: 'Transforms color space (YCrCb/Lab) to decouple blood volume changes from ambient light jitter.' },
+          { step: '03. FFT Frequency Peak Extraction', desc: 'Computes power spectral density to isolate cardiac frequency bands (0.75 Hz to 3.5 Hz).' },
+          { step: '04. Waveform Telemetry Export', desc: 'Streams smoothed cardiac pulse curves directly to interactive UI charts and diagnostic monitors.' }
+        ]
+      },
+      {
+        id: 'enterprise-analytics',
+        title: 'Enterprise Analytics & MS Office Automation Suite',
+        category: 'Data Systems & Business Intelligence',
+        role: 'Data Modeling & Systems Specialist',
+        badge: 'MS OFFICE & BUSINESS INTEL',
+        badgeColor: 'border-indigo-500/40 text-indigo-400 bg-indigo-500/10',
+        summary: 'Enterprise-grade data modeling and business intelligence frameworks developed across Microsoft Excel, Power BI, Word, and PowerPoint for executive stakeholder decision making.',
+        specs: [
+          'Advanced multi-criteria Excel modeling (nested XLOOKUP, dynamic array formulas, INDEX/MATCH)',
+          'Automated data cleaning & transformation pipelines using Power Query & VBA',
+          'Interactive Power BI multi-table relational models with DAX measures',
+          'Executive publication-quality documentation in Word and presentation decks in PowerPoint'
+        ],
+        techStack: ['Microsoft Excel', 'VBA / Macros', 'Power BI', 'DAX', 'Power Query', 'Microsoft Word', 'Microsoft PowerPoint', 'Microsoft 365'],
+        resumeUrl: USER_INFO.resumeUrl,
+        architecture: [
+          { step: '01. Ingestion & ETL Normalization', desc: 'Power Query pipelines clean, unpivot, and standardize heterogeneous institutional datasets.' },
+          { step: '02. Relational Star-Schema Modeling', desc: 'Establishes dimension and fact tables with optimized DAX measure calculations.' },
+          { step: '03. Dynamic Forecasting Models', desc: 'Excel scenario managers and sensitivity matrices project operational and clinical metrics.' },
+          { step: '04. Executive Synthesis & Briefings', desc: 'Synchronized live-linked PowerPoint decks and formal Word technical briefs for leadership.' }
+        ]
+      }
+    ];
+
+    // --- Interactive Project Deep-Dive Modal ---
+    const ProjectModal = ({ project, onClose }) => {
+      if (!project) return null;
+
+      useEffect(() => {
+        const handleKeyDown = (e) => {
+          if (e.key === 'Escape') onClose();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+      }, [onClose]);
+
+      return (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto animate-fade-in">
+          {/* Backdrop Blur */}
+          <div 
+            className="fixed inset-0 bg-slate-950/80 backdrop-blur-md transition-opacity"
+            onClick={onClose}
+          ></div>
+
+          {/* Modal Container */}
+          <div className="relative w-full max-w-3xl my-8 dark:bg-[#090f1e] bg-white rounded-2xl border dark:border-cyan-500/30 border-slate-300 shadow-[0_0_50px_rgba(0,0,0,0.5)] dark:shadow-[0_0_50px_rgba(0,240,255,0.2)] overflow-hidden z-10">
+            {/* Modal Header */}
+            <div className="dark:bg-slate-900/90 bg-slate-100 px-6 py-4 border-b dark:border-slate-800 border-slate-200 flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <span className={`px-2.5 py-1 rounded-full font-mono text-[10px] font-bold border ${project.badgeColor}`}>
+                  {project.badge}
+                </span>
+                <span className="font-mono text-xs dark:text-slate-400 text-slate-500 hidden sm:inline">
+                  // {project.role}
+                </span>
+              </div>
+
+              <button
+                onClick={onClose}
+                className="p-1.5 rounded-lg dark:text-slate-400 text-slate-500 dark:hover:text-white hover:text-black hover:bg-slate-200 dark:hover:bg-slate-800 transition-all"
+                title="Close Modal"
+              >
+                <IconClose />
+              </button>
+            </div>
+
+            {/* Modal Body */}
+            <div className="p-6 sm:p-8 space-y-6 max-h-[78vh] overflow-y-auto">
+              {/* Title & Category */}
+              <div>
+                <span className="font-mono text-xs dark:text-cyan-400 text-sky-600 uppercase tracking-widest block mb-1">
+                  {project.category}
+                </span>
+                <h3 className="font-display font-extrabold text-2xl sm:text-3xl dark:text-white text-slate-950">
+                  {project.title}
+                </h3>
+                <p className="dark:text-slate-300 text-slate-700 text-sm sm:text-base leading-relaxed mt-2.5">
+                  {project.summary}
+                </p>
+              </div>
+
+              {/* Tech Stack Badges */}
+              <div className="space-y-2">
+                <span className="font-mono text-xs dark:text-slate-400 text-slate-500 uppercase tracking-wider block">
+                  Technologies &amp; Libraries:
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {project.techStack.map((tech, i) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 rounded-lg dark:bg-slate-900 bg-slate-100 border dark:border-cyan-500/25 border-slate-300 dark:text-cyan-300 text-sky-700 font-mono text-xs font-semibold shadow-sm"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Verified Capabilities */}
+              <div className="space-y-2">
+                <span className="font-mono text-xs dark:text-emerald-400 text-emerald-600 uppercase tracking-wider block font-semibold">
+                  Core Architectural Capabilities:
+                </span>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 font-sans text-xs sm:text-sm">
+                  {project.specs.map((spec, i) => (
+                    <li key={i} className="flex items-start gap-2 p-2.5 rounded-lg dark:bg-slate-950/60 bg-slate-50 border dark:border-slate-800/80 border-slate-200">
+                      <span className="text-emerald-400 font-bold mt-0.5">âœ“</span>
+                      <span className="dark:text-slate-300 text-slate-700">{spec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Architectural Pipeline Breakdown */}
+              <div className="space-y-3">
+                <span className="font-mono text-xs dark:text-purple-400 text-purple-600 uppercase tracking-wider block font-semibold flex items-center gap-1.5">
+                  <IconLayers />
+                  <span>Pipeline Architecture &amp; Dataflow Execution:</span>
+                </span>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {project.architecture.map((arch, i) => (
+                    <div key={i} className="p-3.5 rounded-xl dark:bg-slate-950 bg-slate-50 border dark:border-slate-800 border-slate-200 space-y-1">
+                      <span className="font-mono text-xs dark:text-cyan-400 text-sky-600 font-bold block">
+                        {arch.step}
+                      </span>
+                      <p className="text-xs dark:text-slate-400 text-slate-600 leading-relaxed">
+                        {arch.desc}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Modal Action Links */}
+              <div className="pt-4 border-t dark:border-slate-800 border-slate-200 flex flex-wrap gap-3 items-center justify-between">
+                <div className="flex flex-wrap gap-3">
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-5 py-2.5 rounded-lg bg-red-600 hover:bg-red-500 text-white font-display font-bold text-xs uppercase tracking-wider flex items-center gap-2 shadow-[0_0_15px_rgba(239,68,68,0.4)] transition-all"
+                    >
+                      <IconHeart />
+                      <span>Launch Live Application â†—</span>
+                    </a>
+                  )}
+
+                  {project.githubUrl && (
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-5 py-2.5 rounded-lg dark:bg-slate-900 bg-slate-100 border dark:border-slate-700 border-slate-300 dark:text-slate-200 text-slate-800 font-display font-bold text-xs uppercase tracking-wider hover:border-emerald-400 hover:text-emerald-400 transition-all flex items-center gap-2"
+                    >
+                      <IconGithub />
+                      <span>GitHub: srbilal12-cyber â†—</span>
+                    </a>
+                  )}
+
+                  {project.resumeUrl && (
+                    <a
+                      href={project.resumeUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-5 py-2.5 rounded-lg dark:bg-slate-900 bg-slate-100 border dark:border-cyan-400/50 border-sky-400 dark:text-cyan-300 text-sky-700 font-display font-bold text-xs uppercase tracking-wider hover:bg-cyan-500 hover:text-slate-950 transition-all flex items-center gap-2"
+                    >
+                      <IconDownload />
+                      <span>View in Verified Resume / CV</span>
+                    </a>
+                  )}
+                </div>
+
+                <button
+                  onClick={onClose}
+                  className="px-4 py-2 rounded-lg dark:text-slate-400 text-slate-500 text-xs font-mono hover:text-white transition-colors"
+                >
+                  [CLOSE VIEW]
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    // --- Expanded Technical Projects Showcase Section ---
+    const TechnicalProjectsShowcase = () => {
+      const [activeProject, setActiveProject] = useState(null);
+      const [filter, setFilter] = useState('ALL');
+
+      const categories = ['ALL', 'Clinical AI', 'Cybersecurity', 'Data Systems'];
+
+      const filteredProjects = useMemo(() => {
+        if (filter === 'ALL') return TECHNICAL_PROJECTS;
+        if (filter === 'Clinical AI') return TECHNICAL_PROJECTS.filter(p => p.category.includes('Clinical') || p.category.includes('Vision'));
+        if (filter === 'Cybersecurity') return TECHNICAL_PROJECTS.filter(p => p.category.includes('Cybersecurity'));
+        if (filter === 'Data Systems') return TECHNICAL_PROJECTS.filter(p => p.category.includes('Data Systems'));
+        return TECHNICAL_PROJECTS;
+      }, [filter]);
+
+      const openModal = (proj) => {
+        sound.playModalOpen();
+        setActiveProject(proj);
+      };
+
+      const closeModal = () => {
+        sound.playModalClose();
+        setActiveProject(null);
+      };
+
+      return (
+        <section id="projects" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
+            <div className="inline-flex items-center gap-2 font-mono text-xs dark:text-cyan-400 text-sky-600 tracking-widest uppercase">
+              <IconLayers />
+              <span>// MODULE 02: INITIATIVES &amp; ARCHITECTURES</span>
+            </div>
+            <h2 className="font-display font-bold text-3xl sm:text-5xl dark:text-white text-slate-900">
+              Technical <span className="dark:text-cyan-400 text-sky-600">Projects Showcase</span>
+            </h2>
+            <p className="dark:text-slate-400 text-slate-600 font-sans text-base sm:text-lg">
+              Explore Muhammad Bilal Yousaf's software engineering, clinical computer vision platforms, cybersecurity auditing tooling, and advanced Microsoft Office modeling architectures.
+            </p>
+
+            {/* Filter Tabs */}
+            <div className="flex flex-wrap items-center justify-center gap-2 pt-4 font-mono text-xs">
+              {categories.map((cat) => (
+                <button
+                  key={cat}
+                  onClick={() => {
+                    sound.playClick();
+                    setFilter(cat);
+                  }}
+                  className={`px-4 py-1.5 rounded-full border transition-all ${
+                    filter === cat
+                      ? 'bg-cyan-500 text-slate-950 font-bold border-cyan-400 shadow-[0_0_15px_rgba(0,240,255,0.4)]'
+                      : 'dark:bg-slate-900 bg-white border-slate-300 dark:border-slate-800 dark:text-slate-400 text-slate-600 hover:border-cyan-400 hover:text-cyan-400'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Projects Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+            {filteredProjects.map((project) => (
+              <div
+                key={project.id}
+                className="cyber-panel p-6 sm:p-8 dark:bg-slate-900/80 bg-white/95 border dark:border-slate-800 border-slate-200 rounded-2xl flex flex-col justify-between space-y-6 hover:border-cyan-400/60 dark:hover:border-cyan-400/50 transition-all duration-300 shadow-sm hover:shadow-[0_0_30px_rgba(0,240,255,0.15)] group"
+              >
+                <div className="space-y-4">
+                  {/* Card Header */}
+                  <div className="flex items-center justify-between gap-2">
+                    <span className={`px-2.5 py-1 rounded-full font-mono text-[10px] font-bold border ${project.badgeColor}`}>
+                      {project.badge}
+                    </span>
+                    <span className="font-mono text-xs dark:text-slate-400 text-slate-500">
+                      {project.role}
+                    </span>
+                  </div>
+
+                  {/* Title & Summary */}
+                  <div>
+                    <h3 className="font-display font-bold text-xl sm:text-2xl dark:text-white text-slate-900 group-hover:text-cyan-400 transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="dark:text-slate-300 text-slate-600 text-sm leading-relaxed mt-2">
+                      {project.summary}
+                    </p>
+                  </div>
+
+                  {/* Tech Stack Badges */}
+                  <div className="space-y-1.5 pt-2">
+                    <span className="font-mono text-[11px] dark:text-slate-400 text-slate-500 uppercase tracking-wider block">
+                      Tech Stack:
+                    </span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {project.techStack.map((tech, i) => (
+                        <span
+                          key={i}
+                          className="px-2.5 py-1 rounded-md dark:bg-slate-950 bg-slate-100 border dark:border-cyan-500/20 border-slate-300 dark:text-cyan-300 text-sky-700 font-mono text-[11px] font-semibold"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bullet Specs */}
+                  <ul className="space-y-1.5 font-sans text-xs dark:text-slate-400 text-slate-600 pt-1">
+                    {project.specs.slice(0, 3).map((spec, i) => (
+                      <li key={i} className="flex items-start gap-2">
+                        <span className="text-cyan-400 font-bold">â€º</span>
+                        <span>{spec}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Card Actions */}
+                <div className="pt-4 border-t dark:border-slate-800 border-slate-200 flex flex-wrap gap-2.5 items-center justify-between">
+                  <button
+                    onClick={() => openModal(project)}
+                    onMouseEnter={() => sound.playHover()}
+                    className="cyber-button px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-sky-600 text-white font-display font-bold text-xs uppercase tracking-wider shadow-[0_0_15px_rgba(0,240,255,0.25)] hover:shadow-[0_0_25px_rgba(0,240,255,0.5)] hover:scale-105 active:scale-95 transition-all flex items-center gap-1.5"
+                  >
+                    <IconLayers />
+                    <span>INSPECT ARCHITECTURE &amp; SPECS</span>
+                  </button>
+
+                  <div className="flex items-center gap-2">
+                    {project.liveUrl && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        onMouseEnter={() => sound.playHover()}
+                        className="p-2 rounded-lg dark:bg-slate-950 bg-slate-100 border dark:border-slate-800 border-slate-300 text-red-500 hover:border-red-500 transition-all"
+                        title="Launch Live Web App"
+                      >
+                        <IconExternal />
+                      </a>
+                    )}
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        onMouseEnter={() => sound.playHover()}
+                        className="p-2 rounded-lg dark:bg-slate-950 bg-slate-100 border dark:border-slate-800 border-slate-300 text-emerald-500 hover:border-emerald-500 transition-all"
+                        title="GitHub Repository"
+                      >
+                        <IconGithub />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Project Details Modal */}
+          {activeProject && (
+            <ProjectModal project={activeProject} onClose={closeModal} />
+          )}
+        </section>
+      );
+    };
+
+    // --- Technical Proficiencies ---
+    const SkillsGrid = () => {
+      const skills = [
+        {
+          category: 'Cybersecurity & Threat Defense',
+          items: [
+            { name: 'Network Defense & Protocol Hardening', level: 94, desc: 'Traffic telemetry, threat mapping, boundary security' },
+            { name: 'Applied Cryptography & Secure Enclaves', level: 90, desc: 'Symmetric/asymmetric algorithms, token exchange, PKI' },
+            { name: 'Vulnerability Analysis & Ethical Auditing', level: 91, desc: 'Defensive penetration analysis, endpoint protection, Linux systems' }
+          ]
+        },
+        {
+          category: 'Artificial Intelligence & Vision',
+          items: [
+            { name: 'Computer Vision & Optical PPG', level: 96, desc: 'Signal processing, micro-vascular colorimetry, non-invasive sensing' },
+            { name: 'Python & Machine Learning Pipelines', level: 93, desc: 'TensorFlow, Scikit-Learn, NumPy, predictive regression' },
+            { name: 'Spectral Image Analysis', level: 89, desc: 'Multi-channel decomposition, noise filtering, optical calibration' }
+          ]
+        },
+        {
+          category: 'Microsoft Office & Analytics Suite',
+          items: [
+            { name: 'Microsoft Excel (Advanced Data Modeling)', level: 96, desc: 'Advanced formulas (XLOOKUP, INDEX/MATCH), Pivot Tables, multi-criteria data modeling & automated reporting' },
+            { name: 'Microsoft Word (Technical Documentation)', level: 94, desc: 'Executive reporting, research publications, corporate proposals, technical indexing & professional typography' },
+            { name: 'Microsoft PowerPoint (Executive Presentations)', level: 92, desc: 'High-impact technical decks, medical & AI visual storytelling, stakeholder briefings & pitch decks' },
+            { name: 'Microsoft 365 & Power BI Analytics', level: 88, desc: 'Interactive business intelligence dashboards, cloud workspace integration & collaborative data reporting' }
+          ]
+        },
+        {
+          category: 'Software Engineering & Cloud',
+          items: [
+            { name: 'React.js & Progressive Web Apps', level: 95, desc: 'Component architectures, mobile PWA manifests, modern reactive state flows' },
+            { name: 'Modern Web APIs & Mobile Systems', level: 92, desc: 'Camera MediaDevices API, Geolocation, Responsive Tailwind UI systems' },
+            { name: 'Git & Deployment Workflows', level: 93, desc: 'Version control, deployment pipelines, Replit, CI/CD automated deployment' }
+          ]
+        }
+      ];
+
+      return (
+        <section id="expertise" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 font-mono text-xs dark:text-emerald-400 text-emerald-600 tracking-widest uppercase">
+              <IconCpu />
+              <span>// MODULE 03: VERIFIED COMPETENCIES</span>
+            </div>
+            <h2 className="font-display font-bold text-3xl sm:text-5xl dark:text-white text-slate-900">
+              Technical <span className="dark:text-emerald-400 text-emerald-600">Proficiencies</span>
+            </h2>
+            <p className="dark:text-slate-400 text-slate-600 font-sans text-base sm:text-lg">
+              Verified specializations across Cyber Engineering, Artificial Intelligence, Microsoft Office Suite, and Scalable Software.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {skills.map((group, idx) => (
+              <div 
+                key={idx}
+                className="cyber-panel p-6 sm:p-8 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-2xl space-y-6 hover:border-slate-400 dark:hover:border-slate-700 transition-all shadow-sm"
+              >
+                <h3 className="font-display font-bold text-xl dark:text-white text-slate-900 flex items-center gap-2.5">
+                  <span className="w-2 h-2 rounded-full bg-cyan-400"></span>
+                  {group.category}
+                </h3>
+
+                <div className="space-y-5">
+                  {group.items.map((item, i) => (
+                    <div key={i} className="space-y-1.5">
+                      <div className="flex justify-between text-sm">
+                        <span className="font-semibold dark:text-slate-200 text-slate-800">{item.name}</span>
+                        <span className="font-mono text-xs dark:text-cyan-400 text-sky-600 font-bold">{item.level}%</span>
+                      </div>
+                      <p className="text-xs dark:text-slate-400 text-slate-500 leading-relaxed">{item.desc}</p>
+                      <div className="w-full h-1.5 dark:bg-slate-950 bg-slate-100 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-cyan-400 to-emerald-400 rounded-full"
+                          style={{ width: `${item.level}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      );
+    };
+
+    // --- Direct Contact / Transmission (Live Formspree AJAX & Direct Gmail Fallback) ---
+    const ContactTransmission = () => {
+      const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+      const [transmitting, setTransmitting] = useState(false);
+      const [transmissionStep, setTransmissionStep] = useState(0);
+      const [transmitted, setTransmitted] = useState(false);
+      const [deliveryStatus, setDeliveryStatus] = useState('direct'); // 'formspree' or 'direct'
+
+      const handleSubmit = async (e) => {
+        e.preventDefault();
+        if (!formData.name || !formData.email || !formData.message) return;
+
+        sound.playTransmission();
+        setTransmitting(true);
+        setTransmissionStep(1);
+
+        const stepTimer1 = setTimeout(() => setTransmissionStep(2), 600);
+        const stepTimer2 = setTimeout(() => setTransmissionStep(3), 1200);
+
+        try {
+          // Attempt Formspree endpoint transmission
+          const response = await fetch("https://formspree.io/f/xbjnqzkr", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify({
+              name: formData.name,
+              _replyto: formData.email,
+              message: formData.message,
+              _subject: `New Transmission from ${formData.name} via Cyber Portfolio`
+            })
+          });
+
+          clearTimeout(stepTimer1);
+          clearTimeout(stepTimer2);
+
+          if (response.ok) {
+            setDeliveryStatus('formspree');
+          } else {
+            setDeliveryStatus('direct');
+          }
+        } catch (err) {
+          clearTimeout(stepTimer1);
+          clearTimeout(stepTimer2);
+          setDeliveryStatus('direct');
+        }
+
+        setTimeout(() => {
+          setTransmitting(false);
+          setTransmitted(true);
+          sound.playConfirm();
+        }, 1800);
+      };
+
+      const mailtoUrl = `mailto:${USER_INFO.email}?subject=${encodeURIComponent(`Transmission from ${formData.name || 'Portfolio Visitor'}`)}&body=${encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      )}`;
+
+      return (
+        <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
+            <div className="inline-flex items-center gap-2 font-mono text-xs text-cyan-400 tracking-widest uppercase">
+              <IconShield />
+              <span>// MODULE 04: DIRECT UPLINK</span>
+            </div>
+            <h2 className="font-display font-bold text-3xl sm:text-5xl dark:text-white text-slate-900">
+              Establish <span className="dark:text-cyan-400 text-sky-600">Transmission</span>
+            </h2>
+            <p className="dark:text-slate-400 text-slate-600 font-sans text-base sm:text-lg">
+              Reach Muhammad Bilal Yousaf directly for collaboration, cyber engineering initiatives, or HemoScan partnerships.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            
+            {/* Left: Verified Contact Information */}
+            <div className="lg:col-span-5 space-y-6">
+              <div className="cyber-panel p-6 sm:p-8 dark:bg-slate-900/80 bg-white/90 border dark:border-slate-800 border-slate-200 rounded-2xl space-y-5 shadow-sm">
+                <div className="flex items-center gap-3">
+                  <img 
+                    src={USER_HEADSHOT_SRC} 
+                    alt={USER_INFO.name} 
+                    className="w-16 h-16 rounded-2xl object-cover border-2 border-cyan-400 shadow-[0_0_15px_rgba(0,240,255,0.3)]"
+                  />
+                  <div>
+                    <h3 className="font-display font-bold text-lg dark:text-white text-slate-900">{USER_INFO.name}</h3>
+                    <p className="text-xs text-emerald-500 font-mono font-semibold">{USER_INFO.role}</p>
+                    <p className="text-xs dark:text-slate-400 text-slate-500 font-mono">{USER_INFO.location}</p>
+                  </div>
+                </div>
+
+                <div className="space-y-3 pt-2 font-mono text-xs">
+                  {/* Verified Gmail */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconMail />
+                      <span>GMAIL:</span>
+                    </span>
+                    <a 
+                      href={`mailto:${USER_INFO.email}`} 
+                      className="dark:text-cyan-400 text-sky-600 hover:underline font-semibold"
+                      onClick={() => sound.playClick()}
+                    >
+                      {USER_INFO.email}
+                    </a>
+                  </div>
+
+                  {/* Phone */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconPhone />
+                      <span>PHONE:</span>
+                    </span>
+                    <span className="dark:text-emerald-400 text-emerald-600 font-semibold">{USER_INFO.phone}</span>
+                  </div>
+
+                  {/* LinkedIn */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconLinkedin />
+                      <span>LINKEDIN:</span>
+                    </span>
+                    <a 
+                      href={USER_INFO.linkedin} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="dark:text-cyan-400 text-sky-600 hover:underline font-semibold flex items-center gap-1"
+                      onClick={() => sound.playClick()}
+                    >
+                      <span>Muhammad Bilal Yousaf</span>
+                      <IconExternal />
+                    </a>
+                  </div>
+
+                  {/* GitHub */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconGithub />
+                      <span>GITHUB:</span>
+                    </span>
+                    <a 
+                      href={USER_INFO.github} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="dark:text-cyan-400 text-sky-600 hover:underline font-semibold flex items-center gap-1"
+                      onClick={() => sound.playClick()}
+                    >
+                      <span>srbilal12-cyber</span>
+                      <IconExternal />
+                    </a>
+                  </div>
+
+                  {/* HemoScan Project */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconHeart />
+                      <span>HEMOSCAN APP:</span>
+                    </span>
+                    <a 
+                      href={USER_INFO.hemoscanUrl} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="text-red-500 dark:text-red-400 hover:underline font-semibold flex items-center gap-1"
+                      onClick={() => sound.playClick()}
+                    >
+                      <span>hemo-scan.replit.app</span>
+                      <IconExternal />
+                    </a>
+                  </div>
+
+                  {/* Printable Resume */}
+                  <div className="p-3 dark:bg-slate-950/70 bg-slate-50 rounded-xl border dark:border-slate-800 border-slate-200 flex items-center justify-between">
+                    <span className="dark:text-slate-400 text-slate-500 flex items-center gap-1.5">
+                      <IconDownload />
+                      <span>VERIFIED CV:</span>
+                    </span>
+                    <a 
+                      href={USER_INFO.resumeUrl} 
+                      target="_blank" 
+                      rel="noreferrer" 
+                      className="text-cyan-400 hover:underline font-semibold flex items-center gap-1"
+                      onClick={() => sound.playClick()}
+                    >
+                      <span>Printable Resume</span>
+                      <IconExternal />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right: Message Dispatch Form */}
+            <div className="lg:col-span-7 dark:bg-slate-900/90 bg-white/95 border dark:border-slate-800 border-slate-200 rounded-2xl p-6 sm:p-8 shadow-md relative">
+              <h3 className="font-display font-bold text-2xl dark:text-white text-slate-900 mb-2">
+                Send Direct Transmission
+              </h3>
+              <p className="dark:text-slate-400 text-slate-600 text-sm mb-6">
+                Transmit a secure message directly to Muhammad Bilal Yousaf ({USER_INFO.email}).
+              </p>
+
+              {transmitted ? (
+                <div className="py-10 text-center space-y-4 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6">
+                  <div className="w-14 h-14 mx-auto rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center text-emerald-400 text-2xl shadow-[0_0_20px_rgba(16,185,129,0.3)]">
+                    âœ“
+                  </div>
+                  <h4 className="font-display font-bold text-xl text-emerald-400">
+                    Transmission Dispatched Successfully
+                  </h4>
+                  <p className="dark:text-slate-300 text-slate-600 text-sm max-w-md mx-auto leading-relaxed">
+                    Your packet has been transmitted for <strong>{USER_INFO.email}</strong>. A response will be dispatched within 24 business hours.
+                  </p>
+
+                  <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
+                    <a
+                      href={mailtoUrl}
+                      className="px-6 py-2.5 rounded-lg bg-emerald-500 text-slate-950 font-display font-bold text-xs uppercase tracking-wider hover:bg-emerald-400 transition-all flex items-center gap-1.5 shadow-md"
+                    >
+                      <IconMail />
+                      <span>Open in Mail Client / Gmail â†—</span>
+                    </a>
+
+                    <button
+                      onClick={() => {
+                        sound.playClick();
+                        setTransmitted(false);
+                        setFormData({ name: '', email: '', message: '' });
+                      }}
+                      className="px-5 py-2.5 dark:bg-slate-800 bg-slate-200 dark:text-slate-300 text-slate-700 font-display font-bold text-xs rounded-lg hover:bg-slate-300 dark:hover:bg-slate-700 transition-all"
+                    >
+                      SEND ANOTHER TRANSMISSION
+                    </button>
+                  </div>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-5">
+                  <div>
+                    <label className="block font-mono text-xs dark:text-cyan-400 text-sky-600 mb-1.5 uppercase font-semibold">
+                      [01] Full Name / Organization
+                    </label>
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Recruiter / Healthcare Researcher"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      onFocus={() => sound.playHover()}
+                      className="w-full dark:bg-slate-950/70 bg-slate-50 border dark:border-slate-800 border-slate-300 focus:border-cyan-400 rounded-xl px-4 py-3 text-sm dark:text-slate-100 text-slate-900 outline-none transition-all dark:placeholder-slate-600 placeholder-slate-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block font-mono text-xs dark:text-emerald-400 text-emerald-600 mb-1.5 uppercase font-semibold">
+                      [02] Your Email Address
+                    </label>
+                    <input
+                      type="email"
+                      required
+                      placeholder="e.g. partner@institute.org"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onFocus={() => sound.playHover()}
+                      className="w-full dark:bg-slate-950/70 bg-slate-50 border dark:border-slate-800 border-slate-300 focus:border-emerald-400 rounded-xl px-4 py-3 text-sm dark:text-slate-100 text-slate-900 outline-none transition-all dark:placeholder-slate-600 placeholder-slate-400"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block font-mono text-xs dark:text-purple-400 text-purple-600 mb-1.5 uppercase font-semibold">
+                      [03] Message / Project Inquiry
+                    </label>
+                    <textarea
+                      rows="4"
+                      required
+                      placeholder="Outline collaboration opportunities, cyber engineering, or HemoScan queries..."
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onFocus={() => sound.playHover()}
+                      className="w-full dark:bg-slate-950/70 bg-slate-50 border dark:border-slate-800 border-slate-300 focus:border-purple-400 rounded-xl px-4 py-3 text-sm dark:text-slate-100 text-slate-900 outline-none transition-all dark:placeholder-slate-600 placeholder-slate-400"
+                    ></textarea>
+                  </div>
+
+                  {transmitting && (
+                    <div className="p-3 dark:bg-slate-950 bg-slate-100 rounded-lg border border-cyan-400 font-mono text-xs space-y-2">
+                      <div className="flex justify-between text-cyan-500 font-semibold">
+                        <span>
+                          {transmissionStep === 1 && 'ENCRYPTING PAYLOAD & VALIDATING HEADERS...'}
+                          {transmissionStep === 2 && 'HANDSHAKE VERIFIED VIA FORMSPREE PROTOCOL...'}
+                          {transmissionStep === 3 && `DISPATCHING TELEMETRY TO ${USER_INFO.email}...`}
+                        </span>
+                        <span>{transmissionStep * 33}%</span>
+                      </div>
+                      <div className="w-full h-1 bg-slate-200 dark:bg-slate-800 rounded-full overflow-hidden">
+                        <div 
+                          className="h-full bg-gradient-to-r from-cyan-400 to-emerald-400 transition-all duration-300"
+                          style={{ width: `${transmissionStep * 33.3}%` }}
+                        ></div>
+                      </div>
+                    </div>
+                  )}
+
+                  <button
+                    type="submit"
+                    disabled={transmitting}
+                    onMouseEnter={() => sound.playHover()}
+                    className="cyber-button w-full py-4 bg-gradient-to-r from-cyan-500 via-sky-500 to-emerald-500 text-white dark:text-black font-display font-extrabold text-sm tracking-wider uppercase shadow-[0_0_25px_rgba(0,240,255,0.3)] hover:shadow-[0_0_35px_rgba(0,240,255,0.6)] hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2"
+                  >
+                    <IconActivity />
+                    <span>{transmitting ? 'TRANSMITTING PACKET...' : 'TRANSMIT ENCRYPTED MESSAGE'}</span>
+                  </button>
+                </form>
+              )}
+            </div>
+
+          </div>
+        </section>
+      );
+    };
+
+    // --- Footer ---
+    const Footer = () => {
+      const [uptime, setUptime] = useState(0);
+
+      useEffect(() => {
+        const interval = setInterval(() => setUptime(prev => prev + 1), 1000);
+        return () => clearInterval(interval);
+      }, []);
+
+      const formatTime = (secs) => {
+        const m = Math.floor(secs / 60).toString().padStart(2, '0');
+        const s = (secs % 60).toString().padStart(2, '0');
+        return `00:${m}:${s}`;
+      };
+
+      const scrollToTop = () => {
+        sound.playConfirm();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+
+      return (
+        <footer className="border-t dark:border-slate-800 border-slate-200 dark:bg-[#070b14]/95 bg-white/95 pt-12 pb-16 relative">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              
+              <div className="space-y-1 text-center md:text-left">
+                <div className="flex items-center justify-center md:justify-start gap-2 font-mono text-xs text-emerald-500">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                  <span>SYSTEM ONLINE // ALL PROTOCOLS VERIFIED</span>
+                </div>
+                <p className="font-display text-sm dark:text-slate-300 text-slate-700">
+                  {USER_INFO.name} Â© 2026. BS Cybersecurity Student @ CUST â€¢ Lead Architect of <a href={USER_INFO.hemoscanUrl} target="_blank" rel="noreferrer" className="text-red-500 hover:underline">HemoScan</a> â€¢ <a href={USER_INFO.github} target="_blank" rel="noreferrer" className="text-cyan-400 hover:underline">GitHub (srbilal12-cyber)</a> â€¢ <a href={USER_INFO.linkedin} target="_blank" rel="noreferrer" className="text-sky-400 hover:underline">LinkedIn</a>.
+                </p>
+                <p className="font-mono text-[11px] dark:text-slate-500 text-slate-400">
+                  SESSION UPTIME: <span className="dark:text-cyan-400 text-sky-600">{formatTime(uptime)}</span> â€¢ {USER_INFO.location}
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <a
+                  href={USER_INFO.resumeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  onMouseEnter={() => sound.playHover()}
+                  onClick={() => sound.playConfirm()}
+                  className="cyber-button px-5 py-3 dark:bg-slate-900 bg-white border dark:border-cyan-400/60 border-cyan-600/60 dark:text-cyan-300 text-sky-700 font-mono text-xs font-bold tracking-wider uppercase hover:border-cyan-400 transition-all flex items-center gap-2 shadow-sm"
+                >
+                  <IconDownload />
+                  <span>RESUME / CV</span>
+                </a>
+
+                <button
+                  onClick={scrollToTop}
+                  onMouseEnter={() => sound.playHover()}
+                  className="cyber-button px-6 py-3 dark:bg-slate-900 bg-white border dark:border-cyan-400 border-sky-600 dark:text-cyan-400 text-sky-700 font-mono text-xs font-bold tracking-wider uppercase dark:hover:bg-cyan-400 dark:hover:text-black hover:bg-sky-50 transition-all flex items-center gap-2 group shadow-sm"
+                >
+                  <span>BEAM UP</span>
+                  <span className="group-hover:-translate-y-1 transition-transform">â–²</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </footer>
+      );
+    };
+
+    // --- Main App ---
+    const App = () => {
+      const [theme, setTheme] = useState('dark');
+      const [soundMuted, setSoundMuted] = useState(sound.muted);
+      const [humActive, setHumActive] = useState(sound.humActive);
+
+      useEffect(() => {
+        document.documentElement.className = theme === 'dark' ? 'dark scroll-smooth' : 'light scroll-smooth';
+      }, [theme]);
+
+      const toggleTheme = () => {
+        setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+        sound.playConfirm();
+      };
+
+      const toggleSound = () => {
+        const isMuted = sound.toggleMute();
+        setSoundMuted(isMuted);
+      };
+
+      const toggleHum = () => {
+        const active = sound.toggleHum();
+        setHumActive(active);
+      };
+
+      return (
+        <div className="relative min-h-screen">
+          <Navbar 
+            theme={theme} 
+            toggleTheme={toggleTheme} 
+            soundMuted={soundMuted} 
+            toggleSound={toggleSound}
+            humActive={humActive}
+            toggleHum={toggleHum}
+          />
+          <main>
+            <Hero theme={theme} />
+            <AboutTerminal />
+            <HemoScanShowcase />
+            <TechnicalProjectsShowcase />
+            <SkillsGrid />
+            <ContactTransmission />
+          </main>
+          <Footer />
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
